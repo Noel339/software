@@ -3,13 +3,17 @@ public class Human {
     private String name;
     private double height;
     private double weight;
+    private int age;
+    private String hobby;
 
     //    コンストラクタ
-    public Human(String name, double height, double weight)    {
-        this.name = name;
-        this.height = height;
-        this.weight = weight;
-    }
+    public Human(String name, double height, double weight, int age, String hobby) {
+    this.name = name;
+    this.height = height;
+    this.weight = weight;
+    this.age = age;
+    this.hobby = hobby;
+}
 
     //    ゲッターとセッター
     public String getName()    {
@@ -54,7 +58,7 @@ public class Human {
 
     // infoメソッドにBMIの表示を追加
     public void info() {
-        System.out.println("名前: " + name + ", 身長: " + height + "cm, 体重: " + weight + "kg, BMI: "
+        System.out.println("名前: " + name + ", 身長: " + height + "cm, 体重: " + weight + "kg, BMI: " + hobby +"趣味:"
                 + String.format("%.1f", calculateBMI()));
     }
 
