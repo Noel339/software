@@ -3,15 +3,19 @@ public class Human {
     private String name;
     private double height;
     private double weight;
-
-    //    コンストラクタ
-    public Human(String name, double height, double weight)    {
+    private int age;
+  
+    //    コンストラクタ 
+    public Human(String name, double height, double weight int age)    {
         this.name = name;
         this.height = height;
         this.weight = weight;
-    }
+        this.age = age;
+    }  
+ 
+    //    ゲッ
 
-    //    ゲッターとセッター
+    ーとセッター 
     public String getName()    {
         return name;
     }
