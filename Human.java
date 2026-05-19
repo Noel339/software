@@ -4,15 +4,15 @@ public class Human {
     private double height;
     private double weight;
 
-    //   コンストラクタ
-    public Human(String name, double height, double weight)   {
+    //    コンストラクタ
+    public Human(String name, double height, double weight)    {
         this.name = name;
         this.height = height;
         this.weight = weight;
     }
 
-    //   ゲッターとセッター
-    public String getName()   {
+    //    ゲッターとセッター
+    public String getName()    {
         return name;
     }
 
@@ -39,6 +39,11 @@ public class Human {
     // 追加: 挨拶をするメソッド
     public void greet() {
         System.out.println("こんにちは、私の名前は" + name + "です！");
+    }
+
+    // 追加: コーヒーを飲むメソッド
+    public void drinkCoffee() {
+        System.out.println(name + "はドリップコーヒーを淹れて飲んだ。リラックスした！");
     }
 
     // BMI
