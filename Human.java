@@ -4,15 +4,15 @@ public class Human {
     private double height;
     private double weight;
 
-    // コンストラクタ
-    public Human(String name, double height, double weight) {
+    //  コンストラクタ
+    public Human(String name, double height, double weight)  {
         this.name = name;
         this.height = height;
         this.weight = weight;
     }
 
-    // ゲッターとセッター
-    public String getName() {
+    //  ゲッターとセッター
+    public String getName()  {
         return name;
     }
 
@@ -36,9 +36,16 @@ public class Human {
         this.weight = weight;
     }
 
-    // 表示
+    // BMI
+    public double calculateBMI() {
+        double heightMeters = height / 100.0;
+        return weight / (heightMeters * heightMeters);
+    }
+
+    // infoメソッドにBMIの表示を追加
     public void info() {
-        System.out.println("名前: " + name + ", 身長: " + height + "cm, 体重: " + weight + "kg");
+        System.out.println("名前: " + name + ", 身長: " + height + "cm, 体重: " + weight + "kg, BMI: "
+                + String.format("%.1f", calculateBMI()));
     }
 
 }
